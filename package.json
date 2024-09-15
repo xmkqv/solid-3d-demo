@@ -11,6 +11,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/three": "^0.168.0",
     "solid-devtools": "^0.29.2",
     "typescript": "^5.3.3",
     "vite": "^5.0.11",
@@ -19,6 +20,7 @@
   "dependencies": {
     "motion": "^10.18.0",
     "solid-icons": "^1.1.0",
-    "solid-js": "^1.8.11"
+    "solid-js": "^1.8.11",
+    "three": "^0.168.0"
   }
 }

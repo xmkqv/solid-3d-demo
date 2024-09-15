@@ -1,0 +1,20 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+.app-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.side-panel {
+  flex: 1; /* Equal width for both panels */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Hide any overflow content */
+}

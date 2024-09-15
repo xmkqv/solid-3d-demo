@@ -1,7 +1,7 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
 
-import Dropdown from "./App";
+import App from "./App";
 
 const root = document.getElementById("root");
 
@@ -11,26 +11,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-import { BiLogosUnity } from "solid-icons/bi";
-
-const options = [
-  {
-    name: "Option 1",
-    icon: BiLogosUnity,
-    onClick: (e: MouseEvent) => console.log("Option 1 clicked"),
-  },
-  {
-    name: "Two",
-    onClick: (e: MouseEvent) => console.log("Option 2 clicked"),
-  },
-];
-
-render(
-  () => (
-    <Dropdown
-      options={options}
-      style={{ left: "100px", top: "100px", width: "100px", height: "100px" }}
-    />
-  ),
-  root!
-);
+render(() => <App />, root!);
